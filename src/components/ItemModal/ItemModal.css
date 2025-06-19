@@ -1,0 +1,33 @@
+.modal__content_type_image {
+  overflow: hidden;
+  padding: 0 0 32px 0;
+}
+.modal__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 20px 0;
+  object-fit: cover;
+}
+
+.modal__footer {
+  margin: 0;
+  padding: 0;
+}
+
+.modal__caption {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 0 32px 12px;
+}
+
+.modal__close {
+}
+
+.modal__weather {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 0 32px 0;
+}
