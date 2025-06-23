@@ -1,10 +1,27 @@
-# React + Vite
+# Project 10: React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+A dynamic weather app that displays the current temperature and indicates whether it’s day or night. The website also offers personalized clothing recommendations based on real-time weather conditions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-[URL] (https://elsherer.github.io/se_project_react)
+- HTML
+- CSS
+- Responsive Design
+
+## Images
+
+![WTWR logo](./src/assets/logobw.svg) WTWR logo
+
+![avatar](./src/assets/avatar.svg) example of avatar
+
+![Weathercard-day](./src/assets/day/clear.svg) example of weather card in the day
+
+![Weathercard-night](./src/assets/night/clear.svg) example of weather card in the night
+
+## Deployment
+
+This webpage is deployed to GitHub Pages
+
+- [Deployment Link](https://elsherer.github.io/se_project_react)
