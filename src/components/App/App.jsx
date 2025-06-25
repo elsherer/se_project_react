@@ -61,6 +61,7 @@ function App() {
             className="modal__input"
             id="name"
             placeholder="Name"
+            required
           />
         </label>
         <label htmlFor="imageUrl" className="modal__label">
@@ -70,6 +71,7 @@ function App() {
             className="modal__input"
             id="imageUrl"
             placeholder="Image URL"
+            required
           />
         </label>
         <fieldset className="modal__radio-btns">
@@ -81,6 +83,7 @@ function App() {
               id="hot"
               name="temperature"
               value="hot"
+              required
             />{" "}
             Hot
           </label>
@@ -94,6 +97,7 @@ function App() {
               id="warm"
               name="temperature"
               value="warm"
+              required
             />{" "}
             Warm
           </label>
@@ -107,6 +111,7 @@ function App() {
               id="cold"
               name="temperature"
               value="cold"
+              required
             />{" "}
             Cold
           </label>
