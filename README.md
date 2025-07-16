@@ -24,4 +24,4 @@ A dynamic weather app that displays the current temperature and indicates whethe
 
 This webpage is deployed to GitHub Pages
 
-- [Deployment Link](https://elsherer.github.io/se_project_react)
+- [Deployment Link] will be added when backend is moved to cloud solution.
