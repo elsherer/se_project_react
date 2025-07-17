@@ -61,7 +61,7 @@ function App() {
   };
 
   const handleAddItemModalSubmit = ({ name, imageUrl, weather }) => {
-    addItem({ name, imageUrl, weather })
+    return addItem({ name, imageUrl, weather })
       .then((newItem) => {
         setClothingItems((prevItems) => [newItem, ...prevItems]);
         closeActiveModal();
@@ -81,8 +81,10 @@ function App() {
   useEffect(() => {
     getItems()
       .then((data) => {
-        setClothingItems(data);
+        const reversedItems = data.reverse();
+        setClothingItems(reversedItems);
       })
+
       .catch(console.error);
   }, []);
 
@@ -113,6 +115,7 @@ function App() {
                   onAddClick={handleAddClick}
                   weatherData={weatherData}
                   clothingItems={clothingItems}
+                  shouldFilter={false}
                 />
               }
             />

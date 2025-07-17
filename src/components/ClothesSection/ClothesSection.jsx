@@ -6,10 +6,11 @@ function ClothesSection({
   onAddClick,
   weatherData,
   clothingItems,
+  shouldFilter = true,
 }) {
-  const filteredItems = clothingItems.filter(
-    (item) => item.weather === weatherData.type
-  );
+  const filteredItems = shouldFilter
+    ? clothingItems.filter((item) => item.weather === weatherData.type)
+    : clothingItems;
   return (
     <div className="clothes-section">
       <div className="clothes-section__text-btn">
