@@ -15,17 +15,13 @@ function addItem({ name, imageUrl, weather }) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({ name, imageUrl, weather }),
-  }).then((res) => {
-    return res.ok ? res.json() : Promise.reject(`Error: ${res.status}`);
-  });
+  }).then(checkResponse);
 }
 
 function deleteItem(id) {
   return fetch(`${baseUrl}/items/${id}`, {
     method: "DELETE",
-  }).then((res) => {
-    return res.ok ? res : Promise.reject(`Error: ${res.status}`);
-  });
+  }).then(checkResponse);
 }
 
 export { getItems, addItem, deleteItem };
